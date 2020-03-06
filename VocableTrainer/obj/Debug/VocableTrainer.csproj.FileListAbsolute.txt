@@ -1,0 +1,12 @@
+C:\Users\BernhardtDo\Desktop\Schulprojekt\VocableTrainer\VocableTrainer\bin\Debug\VocableTrainer.exe.config
+C:\Users\BernhardtDo\Desktop\Schulprojekt\VocableTrainer\VocableTrainer\bin\Debug\VocableTrainer.exe
+C:\Users\BernhardtDo\Desktop\Schulprojekt\VocableTrainer\VocableTrainer\bin\Debug\VocableTrainer.pdb
+C:\Users\BernhardtDo\Desktop\Schulprojekt\VocableTrainer\VocableTrainer\bin\Debug\MaterialSkin.dll
+C:\Users\BernhardtDo\Desktop\Schulprojekt\VocableTrainer\VocableTrainer\obj\Debug\VocableTrainer.csprojAssemblyReference.cache
+C:\Users\BernhardtDo\Desktop\Schulprojekt\VocableTrainer\VocableTrainer\obj\Debug\VocableTrainer.vT_Form.resources
+C:\Users\BernhardtDo\Desktop\Schulprojekt\VocableTrainer\VocableTrainer\obj\Debug\VocableTrainer.Properties.Resources.resources
+C:\Users\BernhardtDo\Desktop\Schulprojekt\VocableTrainer\VocableTrainer\obj\Debug\VocableTrainer.csproj.GenerateResource.cache
+C:\Users\BernhardtDo\Desktop\Schulprojekt\VocableTrainer\VocableTrainer\obj\Debug\VocableTrainer.csproj.CoreCompileInputs.cache
+C:\Users\BernhardtDo\Desktop\Schulprojekt\VocableTrainer\VocableTrainer\obj\Debug\VocableTrainer.csproj.CopyComplete
+C:\Users\BernhardtDo\Desktop\Schulprojekt\VocableTrainer\VocableTrainer\obj\Debug\VocableTrainer.exe
+C:\Users\BernhardtDo\Desktop\Schulprojekt\VocableTrainer\VocableTrainer\obj\Debug\VocableTrainer.pdb
