@@ -17,6 +17,7 @@ namespace VocableTrainer
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new vT_Form());
+            GUIGame.getInstance();
         }
     }
 }

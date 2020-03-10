@@ -55,14 +55,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUIGame.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuestionGenerator.cs" />
+    <Compile Include="Vocable.cs" />
     <Compile Include="vocableGui.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="vocableGui.Designer.cs">
       <DependentUpon>vocableGui.cs</DependentUpon>
     </Compile>
+    <Compile Include="XMLReader.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,6 +95,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Vokabelliste.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
