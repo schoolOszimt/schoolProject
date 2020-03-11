@@ -9,16 +9,17 @@ namespace VocableTrainer
 {
     class XMLReader
     {
-        private static String Path = "../Vokabelliste.xml"; 
+        private static String Path = System.IO.Directory.GetParent(Environment.CurrentDirectory).ToString() + "/../Vokabelliste.xml";
         public static List<Vocable> getAllVocable()
         {
             List<Vocable> vocableList = new List<Vocable>();
             XmlDocument doc = new XmlDocument();
-            doc.LoadXml(@Path);
-            foreach (XmlNode node in doc.DocumentElement.ChildNodes)
+            doc.Load(@Path);
+            foreach (XmlElement node in doc.DocumentElement.ChildNodes)
             {
-                string voc = node.Attributes["Fremdsprache"]?.InnerText;
-                string trans = node.Attributes["Deutsch"]?.InnerText;
+
+                string voc = node.GetAttribute("Fremdsprache");
+                string trans = node.GetAttribute("Deutsch");
                 vocableList.Add(new Vocable(voc, trans));
             }
             return vocableList;
