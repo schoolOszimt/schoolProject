@@ -18,6 +18,7 @@ namespace VocableTrainer
         }
         public static void start()
         {
+            // TODO: Dominik nutzt funktion auf buttonn start
             handler.start();
         }
         public void setVisibility(bool visibility)
