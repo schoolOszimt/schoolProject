@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,10 +15,17 @@ namespace VocableTrainer
         [STAThread]
         static void Main()
         {
+            GUIHandler.getInstance();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new vT_Form());
-            GUIGame.getInstance();
+            GUIGame game = GUIGame.getInstance();
+            Debug.WriteLine(game.Solution + " " + game.Answer1 + " " + game.Answer2 + " " + game.Answer3 + " " + game.Answer4 + " " + game.Question);
+            GUIGame.next();
+            Debug.WriteLine(game.Solution + " " + game.Answer1 + " " + game.Answer2 + " " + game.Answer3 + " " + game.Answer4 + " " + game.Question);
+            GUIGame.next();
+            Debug.WriteLine(game.Solution + " " + game.Answer1 + " " + game.Answer2 + " " + game.Answer3 + " " + game.Answer4 + " " + game.Question);
+            Console.ReadLine();
         }
     }
 }

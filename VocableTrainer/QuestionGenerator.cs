@@ -67,7 +67,7 @@ namespace VocableTrainer
                 if(voc.Translation == answer)
                 {
                     gui.Question = voc.VocableValue;
-                    gui.Solution = voc.VocableValue;
+                    gui.Solution = voc.Translation;
                 }
             }
         }
