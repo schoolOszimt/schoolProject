@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,7 +39,12 @@ namespace VocableTrainer
             Solution = "";
             Question = "";
             QuestionGenerator.generateQuestion();
-            Console.WriteLine(Answer1 + " " + Answer2 + " " + Answer3 + " " + Answer4 + " " + Question + " " + Solution);
+            Debug.Write("we ARE HERE " + Answer1 + " " + Answer2 + " " + Answer3 + " " + Answer4 + " " + Question + " " + Solution);
+            string test1 = Answer1;
+            string test2 = Answer2;
+            string test3 = Answer3;
+            string test4 = Answer4;
+            Debug.Write(" ");
         }
     }
 

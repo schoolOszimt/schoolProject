@@ -23,3 +23,15 @@ C:\Users\Technik\school\schoolProject\VocableTrainer\obj\Debug\VocableTrainer.cs
 C:\Users\Technik\school\schoolProject\VocableTrainer\obj\Debug\VocableTrainer.csproj.CopyComplete
 C:\Users\Technik\school\schoolProject\VocableTrainer\obj\Debug\VocableTrainer.exe
 C:\Users\Technik\school\schoolProject\VocableTrainer\obj\Debug\VocableTrainer.pdb
+C:\Users\Tobias\school\schoolProject\VocableTrainer\bin\Debug\VocableTrainer.exe.config
+C:\Users\Tobias\school\schoolProject\VocableTrainer\bin\Debug\VocableTrainer.exe
+C:\Users\Tobias\school\schoolProject\VocableTrainer\bin\Debug\VocableTrainer.pdb
+C:\Users\Tobias\school\schoolProject\VocableTrainer\bin\Debug\MaterialSkin.dll
+C:\Users\Tobias\school\schoolProject\VocableTrainer\obj\Debug\VocableTrainer.csprojAssemblyReference.cache
+C:\Users\Tobias\school\schoolProject\VocableTrainer\obj\Debug\VocableTrainer.vT_Form.resources
+C:\Users\Tobias\school\schoolProject\VocableTrainer\obj\Debug\VocableTrainer.Properties.Resources.resources
+C:\Users\Tobias\school\schoolProject\VocableTrainer\obj\Debug\VocableTrainer.UserControl1.resources
+C:\Users\Tobias\school\schoolProject\VocableTrainer\obj\Debug\VocableTrainer.csproj.GenerateResource.cache
+C:\Users\Tobias\school\schoolProject\VocableTrainer\obj\Debug\VocableTrainer.csproj.CopyComplete
+C:\Users\Tobias\school\schoolProject\VocableTrainer\obj\Debug\VocableTrainer.exe
+C:\Users\Tobias\school\schoolProject\VocableTrainer\obj\Debug\VocableTrainer.pdb
