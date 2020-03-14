@@ -9,22 +9,22 @@ namespace VocableTrainer
     class GUIMenu
     {
         private static GUIMenu instance;
-        private static GUIHandler handler = GUIHandler.getInstance();
+        private static GUIHandler handler = GUIHandler.GetInstance();
         private GUIMenu() { }
-        public static GUIMenu getInstance()
+        public static GUIMenu GetInstance()
         {
             if (instance == null) instance = new GUIMenu();
             return instance;
         }
-        public static void start()
+        public static void Start()
         {
-            handler.start();
+            handler.Start();
         }
-        public void setVisibility(bool visibility)
+        public void SetVisibility(bool visibility)
         {
             // TODO: Dominik setzt hier menu visibility ein 
         }
-        public static void close()
+        public static void Close()
         {
             System.Environment.Exit(0);
         }

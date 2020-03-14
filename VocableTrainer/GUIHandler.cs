@@ -8,29 +8,29 @@ namespace VocableTrainer
 {
     class GUIHandler
     {
-        private GUIGame gameGui = GUIGame.getInstance();
-        private GUIMenu menuGui = GUIMenu.getInstance();
+        private GUIGame gameGui = GUIGame.GetInstance();
+        private GUIMenu menuGui = GUIMenu.GetInstance();
         private static GUIHandler instance;
         private GUIHandler()
         {
-            gameGui.setVisibility(false);
-            menuGui.setVisibility(true);
+            gameGui.SetVisibility(false);
+            menuGui.SetVisibility(true);
         }
-        public static GUIHandler getInstance()
+        public static GUIHandler GetInstance()
         {
             if (instance == null) instance = new GUIHandler();
             return instance;
         }
-        public void toMenu()
+        public void ToMenu()
         {
-            gameGui.setVisibility(false);
-            menuGui.setVisibility(true);
+            gameGui.SetVisibility(false);
+            menuGui.SetVisibility(true);
         }
 
-        public void start()
+        public void Start()
         {
-            gameGui.setVisibility(true);
-            menuGui.setVisibility(false);
+            gameGui.SetVisibility(true);
+            menuGui.SetVisibility(false);
         }
     }
 }

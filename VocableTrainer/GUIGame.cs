@@ -9,15 +9,15 @@ namespace VocableTrainer
 {
     class GUIGame
     {
-        private static Points points = Points.getInstance();
-        private static GUIHandler handler = GUIHandler.getInstance();
+        private static Points points = Points.GetInstance();
+        private static GUIHandler handler = GUIHandler.GetInstance();
         private GUIGame() { }
         private static GUIGame instance;
-        public static GUIGame getInstance() {
+        public static GUIGame GetInstance() {
             if(instance == null)
             {
                 instance = new GUIGame();
-                instance.newRandom();
+                instance.NewRandom();
             }
             return instance;
         }
@@ -30,14 +30,14 @@ namespace VocableTrainer
         public String Solution { get; set; }
         public static Boolean CheckAnswer(string answer)
         {
-            points.wasAnswerRight(answer == instance.Solution);
+            points.WasAnswerRight(answer == instance.Solution);
             return answer == instance.Solution;
         }
-        public static void next()
+        public static void Next()
         {
-            instance.newRandom();
+            instance.NewRandom();
         }
-        private void newRandom()
+        private void NewRandom()
         {
             instance.Answer1 = "";
             instance.Answer2 = "";
@@ -45,27 +45,27 @@ namespace VocableTrainer
             instance.Answer4 = "";
             instance.Solution = "";
             instance.Question = "";
-            QuestionGenerator.generateQuestion();
+            QuestionGenerator.GenerateQuestion();
         }
         public static void newGame()
         {
-            // TODO: Dominik fügt hier den new game oder reset button ein
-            points.reset();
-            instance.newRandom();
+            // TODO: Dominik fügt hier den new game oder Reset button ein
+            points.Reset();
+            instance.NewRandom();
         }
-        public void setVisibility(bool visibility)
+        public void SetVisibility(bool visibility)
         {
             if(visibility)
             {
-                points.reset();
-                instance.newRandom();
+                points.Reset();
+                instance.NewRandom();
             }
             // TODO: Dominik fügt hier die Gameseite ein bzw macht sie sichtbar
         }
-        public static void close()
+        public static void Close()
         {
             // TODO: Dominik fügt hier den BackButton ein 
-            handler.toMenu();
+            handler.ToMenu();
         }
     }
 

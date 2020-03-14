@@ -15,15 +15,15 @@ namespace VocableTrainer
         [STAThread]
         static void Main()
         {
-            GUIHandler.getInstance();
+            GUIHandler.GetInstance();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new vT_Form());
-            GUIGame game = GUIGame.getInstance();
+            GUIGame game = GUIGame.GetInstance();
             Debug.WriteLine(game.Solution + " " + game.Answer1 + " " + game.Answer2 + " " + game.Answer3 + " " + game.Answer4 + " " + game.Question);
-            GUIGame.next();
+            GUIGame.Next();
             Debug.WriteLine(game.Solution + " " + game.Answer1 + " " + game.Answer2 + " " + game.Answer3 + " " + game.Answer4 + " " + game.Question);
-            GUIGame.next();
+            GUIGame.Next();
             Debug.WriteLine(game.Solution + " " + game.Answer1 + " " + game.Answer2 + " " + game.Answer3 + " " + game.Answer4 + " " + game.Question);
             Console.ReadLine();
         }

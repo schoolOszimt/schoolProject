@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace VocableTrainer
 {
@@ -10,13 +11,12 @@ namespace VocableTrainer
     {
         private static Random random = new Random();
         private static List<Vocable> vocableList;
-        private static GUIGame gui = GUIGame.getInstance(); 
+        private static GUIGame gui = GUIGame.GetInstance(); 
         public QuestionGenerator()
         {
-            vocableList = XMLReader.getAllVocable();
-            generateQuestion();
+            GenerateQuestion();
         }
-        private static String makeAnswer()
+        private static String MakeAnswer()
         {
             int i = random.Next(0, vocableList.Count);
             string answer = vocableList[i].Translation;
@@ -27,40 +27,49 @@ namespace VocableTrainer
             }
             return answer;
         }
-        public static void generateQuestion()
+        public static void GenerateQuestion()
         {
-            if (vocableList == null) vocableList = XMLReader.getAllVocable();
-            gui.Answer1 = makeAnswer();
-            gui.Answer2 = makeAnswer();
-            gui.Answer3 = makeAnswer();
-            gui.Answer4 = makeAnswer();
-            makeSolutionAndVocableRandom();
+            vocableList = XMLReader.GetAllVocable();
+            if (vocableList.Count < 4)
+            {
+                MessageBox.Show("Es ist ein Fehler in Ihrer Vokabelliste aufgetreten. Bitte konsultieren Sie Ihren Systemverwalter.",
+                    "Fehler in der XML-Datei", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Environment.Exit(1);
+            }
+            else
+            {
+                gui.Answer1 = MakeAnswer();
+                gui.Answer2 = MakeAnswer();
+                gui.Answer3 = MakeAnswer();
+                gui.Answer4 = MakeAnswer();
+                MakeSolutionAndVocableRandom();
+            }
         }
 
         private static bool checkOnDouble(String answer)
         {
             return gui.Answer1 == answer || gui.Answer2 == answer || gui.Answer3 == answer || gui.Answer4 == answer;
         }
-        private static void makeSolutionAndVocableRandom()
+        private static void MakeSolutionAndVocableRandom()
         {
             int i = random.Next(1, 4);
             switch (i)
             {
                 case 1:
-                    setSolutionAndVocable(gui.Answer1);
+                    SetSolutionAndVocable(gui.Answer1);
                     return;
                 case 2:
-                    setSolutionAndVocable(gui.Answer2);
+                    SetSolutionAndVocable(gui.Answer2);
                     return;
                 case 3:
-                    setSolutionAndVocable(gui.Answer3);
+                    SetSolutionAndVocable(gui.Answer3);
                     return;
                 case 4:
-                    setSolutionAndVocable(gui.Answer4);
+                    SetSolutionAndVocable(gui.Answer4);
                     return;
             }
         }
-        private static void setSolutionAndVocable(String answer)
+        private static void SetSolutionAndVocable(String answer)
         {
             foreach(Vocable voc in vocableList)
             {
