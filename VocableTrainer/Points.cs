@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VocableTrainer
 {
-    class Points
+    public class Points
     {
         public int right { get; protected set; } = 0;
         public int wrong { get; protected set; } = 0;

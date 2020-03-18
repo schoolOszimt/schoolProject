@@ -2,4 +2,8 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/VocableTrainer/obj/Debug/VocableTrainer.csprojAssemblyReference.cache
+.vs
+obj
+bin
+packages
+

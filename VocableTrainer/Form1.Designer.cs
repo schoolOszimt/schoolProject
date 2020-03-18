@@ -28,40 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
+            this.startMenu_uc1 = new VocableTrainer.startMenu_uc();
+            this.vocableGui_uc1 = new VocableTrainer.vocableGui_uc();
             this.SuspendLayout();
             // 
-            // materialFlatButton1
+            // startMenu_uc1
             // 
-            this.materialFlatButton1.AutoSize = true;
-            this.materialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton1.Depth = 0;
-            this.materialFlatButton1.Location = new System.Drawing.Point(159, 148);
-            this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton1.Name = "materialFlatButton1";
-            this.materialFlatButton1.Primary = false;
-            this.materialFlatButton1.Size = new System.Drawing.Size(172, 36);
-            this.materialFlatButton1.TabIndex = 0;
-            this.materialFlatButton1.Text = "materialFlatButton1";
-            this.materialFlatButton1.UseVisualStyleBackColor = true;
+            this.startMenu_uc1.Location = new System.Drawing.Point(0, 64);
+            this.startMenu_uc1.Name = "startMenu_uc1";
+            this.startMenu_uc1.Size = new System.Drawing.Size(546, 263);
+            this.startMenu_uc1.TabIndex = 0;
+            // 
+            // vocableGui_uc1
+            // 
+            this.vocableGui_uc1.Location = new System.Drawing.Point(0, 64);
+            this.vocableGui_uc1.Name = "vocableGui_uc1";
+            this.vocableGui_uc1.Size = new System.Drawing.Size(546, 263);
+            this.vocableGui_uc1.TabIndex = 1;
             // 
             // vT_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(546, 326);
-            this.Controls.Add(this.materialFlatButton1);
+            this.Controls.Add(this.startMenu_uc1);
+            this.Controls.Add(this.vocableGui_uc1);
+            this.MaximizeBox = false;
             this.Name = "vT_Form";
+            this.Sizable = false;
             this.Text = "VocableTrainer";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
+        private startMenu_uc startMenu_uc1;
+        private vocableGui_uc vocableGui_uc1;
     }
 }
 

@@ -10,7 +10,7 @@ namespace VocableTrainer
     class QuestionGenerator
     {
         private static Random random = new Random();
-        private static List<Vocable> vocableList;
+        public static List<Vocable> vocableList;
         private static GUIGame gui = GUIGame.GetInstance(); 
         public QuestionGenerator()
         {
@@ -52,7 +52,7 @@ namespace VocableTrainer
         }
         private static void MakeSolutionAndVocableRandom()
         {
-            int i = random.Next(1, 4);
+            int i = random.Next(1, 5);
             switch (i)
             {
                 case 1:

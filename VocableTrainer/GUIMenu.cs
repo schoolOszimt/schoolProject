@@ -22,7 +22,7 @@ namespace VocableTrainer
         }
         public void SetVisibility(bool visibility)
         {
-            // TODO: Dominik setzt hier menu visibility ein 
+            // TODO: Domenik setzt hier menu visibility ein 
         }
         public static void Close()
         {
