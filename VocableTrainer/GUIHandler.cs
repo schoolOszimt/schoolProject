@@ -10,10 +10,7 @@ namespace VocableTrainer
     {
         private GUIGame gameGui = GUIGame.GetInstance();
         private static GUIHandler instance;
-        private GUIHandler()
-        {
 
-        }
         public static GUIHandler GetInstance()
         {
             if (instance == null) instance = new GUIHandler();

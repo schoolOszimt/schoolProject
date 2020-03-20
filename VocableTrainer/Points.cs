@@ -9,7 +9,6 @@ namespace VocableTrainer
     public class Points
     {
         public int right { get; protected set; } = 0;
-        public int wrong { get; protected set; } = 0;
         private static Points instance;
         private Points() { }
         public static Points GetInstance()
@@ -23,13 +22,11 @@ namespace VocableTrainer
         public void WasAnswerRight(bool answer)
         {
             if (answer) instance.right += 1;
-            else instance.wrong += 1;
         }
 
         public void Reset()
         {
             instance.right = 0;
-            instance.wrong = 0;
         }
     }
 }

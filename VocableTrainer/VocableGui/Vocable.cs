@@ -10,8 +10,8 @@ namespace VocableTrainer
     {
         public Vocable(string voc, string trans)
         {
-            VocableValue = voc;
-            Translation = trans;
+            VocableValue = trans;
+            Translation = voc;
         }
         public string VocableValue { get; set; }
         public string Translation { get; set; }

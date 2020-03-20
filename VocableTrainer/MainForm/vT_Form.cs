@@ -13,8 +13,8 @@ namespace VocableTrainer
         {
             InitializeComponent();
 
-            MainMenu_uc1.SetParent(this);
-            vocableGui1.SetParent(this);
+            MainMenu_uc1.SetVTForm(this);
+            vocableGui1.SetVTForm(this);
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
@@ -23,12 +23,14 @@ namespace VocableTrainer
         public void ShowGameMenu()
         {
             vocableGui1.BringToFront();
+            this.BackColor = Color.DarkGray;
             MainMenu_uc1.SendToBack();
         }
 
         public void ShowMainMenu()
         {
             vocableGui1.SendToBack();
+            this.BackColor = Color.White;
             MainMenu_uc1.BringToFront();
         }
 

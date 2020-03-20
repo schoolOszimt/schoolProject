@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="VocableTrainer.GUIGame">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wikAABiAAAAAAAAAAAAAAAAABABAAAAEAAAAAAAAACA=</HashCode>
+      <FileName>GUIGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VocableTrainer.GUIHandler" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABABIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GUIHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VocableTrainer.vT_Form">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIQAECAAAIAAAACAAAACAAAAAAQBACABAAQBAAA=</HashCode>
+      <FileName>MainForm\vT_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VocableTrainer.MainMenu_uc" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAAAABAAACAAAAAAAACAACECAAAAACAAACCACAAAAAA=</HashCode>
+      <FileName>MainMenu\MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VocableTrainer.Points" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAABAAAAAAAAAAABABAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Points.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VocableTrainer.Program">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VocableTrainer.QuestionGenerator">
+    <Position X="4.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACBAAAAAEAAgAAAAAAAAAQAAAAAEAAQEAAAAAAA=</HashCode>
+      <FileName>QuestionGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VocableTrainer.Vocable">
+    <Position X="4.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VocableGui\Vocable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VocableTrainer.VocableFunctions">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAQAAAAAAAABAAAAAIAQAAAAAUAA=</HashCode>
+      <FileName>VocableGui\VocableController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VocableTrainer.VocableGui">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EFQAAAAACKIICgIAAACAAAQmAAAAAKBAAKCAAAQBABY=</HashCode>
+      <FileName>VocableGui\VocableGui.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VocableTrainer.XMLReader">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VocableGui\XMLReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VocableTrainer.Properties.Resources">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VocableTrainer.Properties.Settings" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -56,7 +56,7 @@ namespace VocableTrainer
             instance.Question = "";
             QuestionGenerator.GenerateQuestion();
         }
-        public static void newGame()
+        public static void NewGame()
         {
             points.Reset();
             instance.NewRandom();

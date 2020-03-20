@@ -20,11 +20,7 @@ namespace VocableTrainer
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new vT_Form());
             GUIGame game = GUIGame.GetInstance();
-            Debug.WriteLine(game.Solution + " " + game.Answer1 + " " + game.Answer2 + " " + game.Answer3 + " " + game.Answer4 + " " + game.Question);
-            GUIGame.Next();
-            Debug.WriteLine(game.Solution + " " + game.Answer1 + " " + game.Answer2 + " " + game.Answer3 + " " + game.Answer4 + " " + game.Question);
-            GUIGame.Next();
-            Debug.WriteLine(game.Solution + " " + game.Answer1 + " " + game.Answer2 + " " + game.Answer3 + " " + game.Answer4 + " " + game.Question);
+           
             Console.ReadLine();
         }
     }

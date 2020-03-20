@@ -35,24 +35,26 @@
             // 
             // MainMenu_uc1
             // 
-            this.MainMenu_uc1.Location = new System.Drawing.Point(0, 63);
+            this.MainMenu_uc1.BackColor = System.Drawing.Color.White;
+            this.MainMenu_uc1.Location = new System.Drawing.Point(0, 62);
             this.MainMenu_uc1.Name = "MainMenu_uc1";
-            this.MainMenu_uc1.Size = new System.Drawing.Size(546, 263);
+            this.MainMenu_uc1.Size = new System.Drawing.Size(566, 304);
             this.MainMenu_uc1.TabIndex = 0;
             // 
             // vocableGui1
             // 
             this.vocableGui1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("vocableGui1.BackgroundImage")));
-            this.vocableGui1.Location = new System.Drawing.Point(0, 63);
+            this.vocableGui1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.vocableGui1.Location = new System.Drawing.Point(0, 62);
             this.vocableGui1.Name = "vocableGui1";
-            this.vocableGui1.Size = new System.Drawing.Size(546, 263);
+            this.vocableGui1.Size = new System.Drawing.Size(566, 304);
             this.vocableGui1.TabIndex = 1;
             // 
             // vT_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(546, 326);
+            this.ClientSize = new System.Drawing.Size(566, 366);
             this.Controls.Add(this.MainMenu_uc1);
             this.Controls.Add(this.vocableGui1);
             this.MaximizeBox = false;
