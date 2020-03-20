@@ -28,31 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.startMenu_uc1 = new VocableTrainer.startMenu_uc();
-            this.vocableGui_uc1 = new VocableTrainer.vocableGui_uc();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(vT_Form));
+            this.MainMenu_uc1 = new VocableTrainer.MainMenu_uc();
+            this.vocableGui1 = new VocableTrainer.VocableGui();
             this.SuspendLayout();
             // 
-            // startMenu_uc1
+            // MainMenu_uc1
             // 
-            this.startMenu_uc1.Location = new System.Drawing.Point(0, 64);
-            this.startMenu_uc1.Name = "startMenu_uc1";
-            this.startMenu_uc1.Size = new System.Drawing.Size(546, 263);
-            this.startMenu_uc1.TabIndex = 0;
+            this.MainMenu_uc1.Location = new System.Drawing.Point(0, 63);
+            this.MainMenu_uc1.Name = "MainMenu_uc1";
+            this.MainMenu_uc1.Size = new System.Drawing.Size(546, 263);
+            this.MainMenu_uc1.TabIndex = 0;
             // 
-            // vocableGui_uc1
+            // vocableGui1
             // 
-            this.vocableGui_uc1.Location = new System.Drawing.Point(0, 64);
-            this.vocableGui_uc1.Name = "vocableGui_uc1";
-            this.vocableGui_uc1.Size = new System.Drawing.Size(546, 263);
-            this.vocableGui_uc1.TabIndex = 1;
+            this.vocableGui1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("vocableGui1.BackgroundImage")));
+            this.vocableGui1.Location = new System.Drawing.Point(0, 63);
+            this.vocableGui1.Name = "vocableGui1";
+            this.vocableGui1.Size = new System.Drawing.Size(546, 263);
+            this.vocableGui1.TabIndex = 1;
             // 
             // vT_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(546, 326);
-            this.Controls.Add(this.startMenu_uc1);
-            this.Controls.Add(this.vocableGui_uc1);
+            this.Controls.Add(this.MainMenu_uc1);
+            this.Controls.Add(this.vocableGui1);
             this.MaximizeBox = false;
             this.Name = "vT_Form";
             this.Sizable = false;
@@ -63,8 +65,8 @@
 
         #endregion
 
-        private startMenu_uc startMenu_uc1;
-        private vocableGui_uc vocableGui_uc1;
+        private MainMenu_uc MainMenu_uc1;
+        private VocableGui vocableGui1;
     }
 }
 

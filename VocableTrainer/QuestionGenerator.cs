@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace VocableTrainer
@@ -16,11 +13,11 @@ namespace VocableTrainer
         {
             GenerateQuestion();
         }
-        private static String MakeAnswer()
+        private static string MakeAnswer()
         {
             int i = random.Next(0, vocableList.Count);
             string answer = vocableList[i].Translation;
-            while (checkOnDouble(answer))
+            while (CheckOnDouble(answer))
             {
                 i = random.Next(0, vocableList.Count);
                 answer = vocableList[i].Translation;
@@ -46,7 +43,7 @@ namespace VocableTrainer
             }
         }
 
-        private static bool checkOnDouble(String answer)
+        private static bool CheckOnDouble(string answer)
         {
             return gui.Answer1 == answer || gui.Answer2 == answer || gui.Answer3 == answer || gui.Answer4 == answer;
         }
@@ -69,7 +66,7 @@ namespace VocableTrainer
                     return;
             }
         }
-        private static void SetSolutionAndVocable(String answer)
+        private static void SetSolutionAndVocable(string answer)
         {
             foreach(Vocable voc in vocableList)
             {

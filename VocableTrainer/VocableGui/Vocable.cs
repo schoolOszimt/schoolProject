@@ -13,7 +13,7 @@ namespace VocableTrainer
             VocableValue = voc;
             Translation = trans;
         }
-        public String VocableValue { get; set; }
-        public String Translation { get; set; }
+        public string VocableValue { get; set; }
+        public string Translation { get; set; }
     }
 }

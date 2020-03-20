@@ -10,7 +10,7 @@ namespace VocableTrainer
 {
     static class XMLReader
     {
-        private static String Path = System.IO.Directory.GetParent(Environment.CurrentDirectory).ToString() + "/../Vokabelliste.xml";
+        private static string Path = System.IO.Directory.GetParent(Environment.CurrentDirectory).ToString() + "/../Vokabelliste.xml";
         public static List<Vocable> GetAllVocable()
         {
             List<Vocable> vocableList = new List<Vocable>();

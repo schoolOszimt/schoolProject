@@ -1,6 +1,6 @@
 ﻿namespace VocableTrainer
 {
-    partial class startMenu_uc
+    partial class MainMenu_uc
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(startMenu_uc));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu_uc));
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -131,7 +131,7 @@
             this.pictureBox4.TabIndex = 18;
             this.pictureBox4.TabStop = false;
             // 
-            // startMenu_uc
+            // MainMenu_uc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -143,7 +143,7 @@
             this.Controls.Add(this.start_btn);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
-            this.Name = "startMenu_uc";
+            this.Name = "MainMenu_uc";
             this.Size = new System.Drawing.Size(546, 263);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

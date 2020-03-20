@@ -3,15 +3,15 @@ using System.Windows.Forms;
 
 namespace VocableTrainer
 {
-    public partial class startMenu_uc : UserControl
+    public partial class MainMenu_uc : UserControl
     {
         private vT_Form Parent { get; set; }
-        public startMenu_uc()
+        public MainMenu_uc()
         {
             InitializeComponent();
         }
 
-        public void setParent(vT_Form form)
+        public void SetParent(vT_Form form)
         {
             Parent = form;
         }
@@ -19,10 +19,9 @@ namespace VocableTrainer
         private void start_btn_Click(object sender, EventArgs e)
         { 
             GUIGame.newGame();
-            Parent.setAnswersAndVocable();
+            Parent.SetAnswersAndVocable();
             Parent.ShowGameMenu();
             Parent.SetPointLabel(0);
-            Parent.ResetFeedbackResult();
         }
 
         private void exit_btn_Click(object sender, EventArgs e)
@@ -32,8 +31,8 @@ namespace VocableTrainer
 
         private void options_btn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Creator: Falco Sowa, Tobias Trockenbrodt, Korina Schneider, Domenik Bernhardt", "About", MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
+            MessageBox.Show("Creator: Falco Sowa, Tobias Trockenbrodt, Korina Schneider, Domenik Bernhardt", "About",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

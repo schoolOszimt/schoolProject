@@ -29,7 +29,7 @@ namespace VocableTrainer
         public string Answer4 { get; set; }
         public string Question { get; set; }
         public string Solution { get; set; }
-        public static bool CheckAnswer(string answer, bool IsAnswerCorrectWithoutPoints)
+        public static bool IsAnswerCorrect(string answer, bool IsAnswerCorrectWithoutPoints)
         {
             if (IsAnswerCorrectWithoutPoints)
             {
@@ -58,26 +58,8 @@ namespace VocableTrainer
         }
         public static void newGame()
         {
-            // TODO: Domenik fügt hier den new game oder Reset button ein
-
             points.Reset();
             instance.NewRandom();
-        }
-        public void SetVisibility(bool visibility)
-        {
-
-            if(visibility)
-            {
-                points.Reset();
-                instance.NewRandom();
-            }
-            
-            // TODO: Domenik fügt hier die Gameseite ein bzw macht sie sichtbar
-        }
-        public static void Close()
-        {
-            // TODO: Domenik fügt hier den BackButton ein #erledigt
-            handler.ToMenu();
         }
     }
 

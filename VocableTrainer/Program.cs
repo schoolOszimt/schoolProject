@@ -15,7 +15,7 @@ namespace VocableTrainer
         [STAThread]
         static void Main()
         {
-            GUIHandler.GetInstance();
+            //GUIHandler.GetInstance();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new vT_Form());
