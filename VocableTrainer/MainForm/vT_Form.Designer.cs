@@ -35,7 +35,7 @@
             // 
             // MainMenu_uc1
             // 
-            this.MainMenu_uc1.BackColor = System.Drawing.Color.White;
+            this.MainMenu_uc1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
             this.MainMenu_uc1.Location = new System.Drawing.Point(0, 62);
             this.MainMenu_uc1.Name = "MainMenu_uc1";
             this.MainMenu_uc1.Size = new System.Drawing.Size(566, 304);
@@ -60,7 +60,7 @@
             this.MaximizeBox = false;
             this.Name = "vT_Form";
             this.Sizable = false;
-            this.Text = "VocableTrainer";
+            this.Text = "Vokabeltrainer";
             this.ResumeLayout(false);
 
         }
