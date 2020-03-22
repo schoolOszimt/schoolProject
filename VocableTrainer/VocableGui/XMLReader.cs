@@ -27,8 +27,7 @@ namespace VocableTrainer
                     vocableList.Add(new Vocable(voc, trans));
                 }
             }catch(ArgumentOutOfRangeException aoor)
-            {
-                
+            {   
                 log.WriteEntry("Fehler in der XML-Datei. Nicht genügend Übersetzungen vorhanden.");
                 MessageBox.Show("Es ist ein Fehler in Ihrer Vokabelliste aufgetreten. Bitte konsultieren Sie Ihren Systemverwalter."
                      + Environment.NewLine +"Lösungshinweis: Es fehlt ggf. eine Übersetzung. <Fremdsprache>",
@@ -37,7 +36,6 @@ namespace VocableTrainer
             }
             catch (System.IO.IOException siio)
             {
-               
                 log.WriteEntry("Kritischer Fehler. Dateipfad der XML-Datei wurde nicht gefunden oder XML-Datei ist beschädigt.");
                 MessageBox.Show("Es ist ein Fehler in Ihrer Vokabelliste aufgetreten. Bitte konsultieren Sie Ihren Systemverwalter."
                     + Environment.NewLine + "Lösungshinweis: Die XML-Datei ist beschädigt oder nicht vorhanden.",

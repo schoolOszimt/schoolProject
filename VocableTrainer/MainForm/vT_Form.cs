@@ -5,33 +5,35 @@ using MaterialSkin.Controls;
 
 namespace VocableTrainer
 {
-    public partial class vT_Form : MaterialForm
+    public partial class mfrm_VocTrainerForm : MaterialForm
     {
         public MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
         public int numberOfVocable = -1;
-        public vT_Form()
+        public mfrm_VocTrainerForm()
         {
             InitializeComponent();
 
-            MainMenu_uc1.SetVTForm(this);
-            vocableGui1.SetVTForm(this);
+            mmuc_StartUC.SetVTForm(this);
+            vgui_VocGui.SetVTForm(this);
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey700, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
+            
+
         }
 
         public void ShowGameMenu()
         {
-            vocableGui1.BringToFront();
+            vgui_VocGui.BringToFront();
             this.BackColor = Color.DarkGray;
-            MainMenu_uc1.SendToBack();
+            mmuc_StartUC.SendToBack();
         }
 
         public void ShowMainMenu()
         {
-            vocableGui1.SendToBack();
+            vgui_VocGui.SendToBack();
             this.BackColor = Color.White;
-            MainMenu_uc1.BringToFront();
+            mmuc_StartUC.BringToFront();
         }
 
         public void SetAnswersAndVocable()
@@ -39,11 +41,11 @@ namespace VocableTrainer
             var instance = GUIGame.GetInstance();
 
             
-            vocableGui1.answer1_label.Text = instance.Answer1;
-            vocableGui1.answer2_label.Text = instance.Answer2;
-            vocableGui1.answer3_label.Text = instance.Answer3;
-            vocableGui1.answer4_label.Text = instance.Answer4;
-            vocableGui1.vocable_label.Text = instance.Question;
+            vgui_VocGui.lbl_answer1.Text = instance.Answer1;
+            vgui_VocGui.lbl_answer2.Text = instance.Answer2;
+            vgui_VocGui.lbl_answer3.Text = instance.Answer3;
+            vgui_VocGui.lbl_answer4.Text = instance.Answer4;
+            vgui_VocGui.vocable_label.Text = instance.Question;
 
         }
 
@@ -51,15 +53,15 @@ namespace VocableTrainer
         {
             numberOfVocable++;
 
-            vocableGui1.points_label.Text = tempPoints + "/" + numberOfVocable;
+            vgui_VocGui.points_label.Text = tempPoints + "/" + numberOfVocable;
         }
 
         public void SetLabelColor()
         {
-            vocableGui1.answer1_label.ForeColor = Color.Black;
-            vocableGui1.answer2_label.ForeColor = Color.Black;
-            vocableGui1.answer3_label.ForeColor = Color.Black;
-            vocableGui1.answer4_label.ForeColor = Color.Black;
+            vgui_VocGui.lbl_answer1.ForeColor = Color.Black;
+            vgui_VocGui.lbl_answer2.ForeColor = Color.Black;
+            vgui_VocGui.lbl_answer3.ForeColor = Color.Black;
+            vgui_VocGui.lbl_answer4.ForeColor = Color.Black;
         }
 
         public void ResetNumberOfVocable()

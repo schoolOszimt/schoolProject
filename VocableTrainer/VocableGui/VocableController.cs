@@ -10,7 +10,7 @@ namespace VocableTrainer
     {
         public Points pointsInstance = Points.GetInstance();
 
-        public void Exit(vT_Form form)
+        public void Exit(mfrm_VocTrainerForm form)
         {
             ShowResultDialog(form);
             form.ResetNumberOfVocable();
@@ -19,19 +19,17 @@ namespace VocableTrainer
 
         public void Help(object newDesign)
         {
-            Console.WriteLine("Parent des Buttons: "+((Button)newDesign).Parent.Parent.Name);
             int numberOfDeletedTexts = 0;
 
             for (int i = 0; i < ((Button)newDesign).Parent.Parent.Controls.Count; i++)
             {
                 if ((((Button)newDesign).Parent.Parent.Controls[i] is Panel panel))
                 {
-                    Console.WriteLine("Panelname: "+panel.Name);
                     foreach (Control c in panel.Controls)
                     {
                         if (c is MaterialLabel)
                         {
-                            if (((MaterialLabel)c).Name.Contains("answer") && !GUIGame.IsAnswerCorrect(((MaterialLabel)c).Text, true)
+                            if (((MaterialLabel)c).Name.Contains("answer") && !GUIGame.IsAnswerCorrect(((MaterialLabel)c).Text)
                                 && numberOfDeletedTexts < 2)
                             {
                                 c.Text = "";
@@ -44,13 +42,13 @@ namespace VocableTrainer
             }
         }
 
-        public void Skip(vT_Form form)
+        public void Skip(mfrm_VocTrainerForm form)
         {
             GUIGame.Next();
             form.SetAnswersAndVocable();
         }
 
-        public void AnswerClick(vT_Form form, MaterialLabel label, VocableGui gui)
+        public void AnswerClick(mfrm_VocTrainerForm form, MaterialLabel label, VocableGui gui)
         {
             for (int i = 0; i < label.Parent.Parent.Controls.Count; i++)
             {
@@ -62,10 +60,11 @@ namespace VocableTrainer
                         {
                             if (((MaterialLabel)c).Name.Contains("answer"))
                             {
-                                if (GUIGame.IsAnswerCorrect(((MaterialLabel)c).Text, true))
+                                if (GUIGame.IsAnswerCorrect(((MaterialLabel)c).Text))
                                 {
-                                    if (((MaterialLabel)c).Name == label.Name) pointsInstance.WasAnswerRight(true);
-                                    ((MaterialLabel)c).ForeColor = Color.Green;
+                                    if (((MaterialLabel)c).Name == label.Name)
+                                        pointsInstance.WasAnswerRight(true);
+                                        ((MaterialLabel)c).ForeColor = Color.Green;
                                     
                                 }
                                 else
@@ -76,14 +75,14 @@ namespace VocableTrainer
                         }
                     }
                 }
-
+                //Damit der Nutzer die Chance hat die Ausgabe zu lesen, wird an dieser Stelle eine Verzögerung eingefügt
                 gui.timer.Interval = 950;
                 gui.timer.Start();
             }
-          
-        }
 
-        public void ShowResultDialog(vT_Form form)
+        }
+         
+        public void ShowResultDialog(mfrm_VocTrainerForm form)
         {
             if (form.numberOfVocable > 0)
             {
@@ -92,14 +91,14 @@ namespace VocableTrainer
                 {
                     percent = Math.Round((Convert.ToDouble(pointsInstance.Right) / form.numberOfVocable) * 100, 0);
                 }
-                MessageBox.Show("Du hast " + pointsInstance.Right + " von " + form.numberOfVocable + " Vokabeln richtig beantwortet."
+                MessageBox.Show("Sie haben " + pointsInstance.Right + " von " + form.numberOfVocable + " Fragen richtig beantwortet."
                                 + Environment.NewLine + "Das sind " + percent + "%.",
                           "Ergebnis", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
         }
 
-        public void CodeAfterAnswerButtonPress(vT_Form form)
+        public void CodeAfterAnswerButtonPress(mfrm_VocTrainerForm form)
         {
             form.SetLabelColor();
             form.SetPointLabel(pointsInstance.Right);

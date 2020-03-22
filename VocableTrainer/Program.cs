@@ -18,7 +18,7 @@ namespace VocableTrainer
             //GUIHandler.GetInstance();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new vT_Form());
+            Application.Run(new mfrm_VocTrainerForm());
             GUIGame game = GUIGame.GetInstance();
            
             Console.ReadLine();

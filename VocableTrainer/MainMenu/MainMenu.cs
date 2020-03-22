@@ -5,13 +5,13 @@ namespace VocableTrainer
 {
     public partial class MainMenu_uc : UserControl
     {
-        private vT_Form VTForm { get; set; }
+        private mfrm_VocTrainerForm VTForm { get; set; }
         public MainMenu_uc()
         {
             InitializeComponent();
         }
 
-        public void SetVTForm(vT_Form form)
+        public void SetVTForm(mfrm_VocTrainerForm form)
         {
             VTForm = form;
         }
@@ -32,7 +32,7 @@ namespace VocableTrainer
         private void options_btn_Click(object sender, EventArgs e)
         {
             //überarbeiten
-            MessageBox.Show("Creator: Falco Sowa, Tobias Trockenbrodt, Korina Schneider, Domenik Bernhardt", "About",
+            MessageBox.Show("Für Fragen zum Programm wenden Sie sich bitte an Ihren Dozenten." + Environment.NewLine +Environment.NewLine + "Dieser Vokabeltrainer wurde im Auftrag der VHS Berlin erstellt." + Environment.NewLine + "(c)2020 Falco Sowa, Tobias Trockenbrodt, Korina Schneider, Domenik Bernhardt", "Programminformationen",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }

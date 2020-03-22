@@ -7,38 +7,38 @@ namespace VocableTrainer
     {
         private VocableFunctions vocableFunctions = new VocableFunctions();
 
-        private vT_Form VTForm { get; set; }
+        private mfrm_VocTrainerForm VTForm { get; set; }
 
         public VocableGui()
         {
             InitializeComponent();
         }
 
-        public void SetVTForm(vT_Form form)
+        public void SetVTForm(mfrm_VocTrainerForm form)
         {
             VTForm = form;
         }
 
         #region Events
 
-        private void exit_btn_Click(object sender, EventArgs e)
+        private void btn_Back_Click(object sender, EventArgs e)
         {
             vocableFunctions.Exit(VTForm);
         }
 
         private void answer1_label_Click(object sender, EventArgs e)
         {
-            vocableFunctions.AnswerClick(VTForm, answer1_label, this);
+            vocableFunctions.AnswerClick(VTForm, lbl_answer1, this);
         }
 
         private void answer2_label_Click(object sender, EventArgs e)
         {
-            vocableFunctions.AnswerClick(VTForm, answer2_label, this);
+            vocableFunctions.AnswerClick(VTForm, lbl_answer2, this);
         }
 
         private void answer3_label_Click(object sender, EventArgs e)
         {
-           vocableFunctions.AnswerClick(VTForm, answer3_label, this);
+           vocableFunctions.AnswerClick(VTForm, lbl_answer3, this);
         }
 
         private void answer4_label_Click(object sender, EventArgs e)
@@ -48,12 +48,12 @@ namespace VocableTrainer
 
 
 
-        private void skip_btn_Click(object sender, EventArgs e)
+        private void btn_Skip_Click(object sender, EventArgs e)
         {
             vocableFunctions.Skip(VTForm);
         }
 
-        private void help_btn_Click(object sender, EventArgs e)
+        private void btn_Help_Click(object sender, EventArgs e)
         {
             vocableFunctions.Help(sender);
         }

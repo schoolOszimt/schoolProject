@@ -1,6 +1,6 @@
 ﻿namespace VocableTrainer
 {
-    partial class vT_Form
+    partial class mfrm_VocTrainerForm
     {
         /// <summary>
         /// Erforderliche Designervariable.
@@ -28,37 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(vT_Form));
-            this.MainMenu_uc1 = new VocableTrainer.MainMenu_uc();
-            this.vocableGui1 = new VocableTrainer.VocableGui();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mfrm_VocTrainerForm));
+            this.mmuc_StartUC = new VocableTrainer.MainMenu_uc();
+            this.vgui_VocGui = new VocableTrainer.VocableGui();
             this.SuspendLayout();
             // 
-            // MainMenu_uc1
+            // mmuc_StartUC
             // 
-            this.MainMenu_uc1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            this.MainMenu_uc1.Location = new System.Drawing.Point(0, 62);
-            this.MainMenu_uc1.Name = "MainMenu_uc1";
-            this.MainMenu_uc1.Size = new System.Drawing.Size(566, 304);
-            this.MainMenu_uc1.TabIndex = 0;
+            this.mmuc_StartUC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.mmuc_StartUC.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mmuc_StartUC.Location = new System.Drawing.Point(0, 61);
+            this.mmuc_StartUC.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.mmuc_StartUC.Name = "mmuc_StartUC";
+            this.mmuc_StartUC.Size = new System.Drawing.Size(700, 393);
+            this.mmuc_StartUC.TabIndex = 0;
             // 
-            // vocableGui1
+            // vgui_VocGui
             // 
-            this.vocableGui1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("vocableGui1.BackgroundImage")));
-            this.vocableGui1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.vocableGui1.Location = new System.Drawing.Point(0, 62);
-            this.vocableGui1.Name = "vocableGui1";
-            this.vocableGui1.Size = new System.Drawing.Size(566, 304);
-            this.vocableGui1.TabIndex = 1;
+            this.vgui_VocGui.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("vgui_VocGui.BackgroundImage")));
+            this.vgui_VocGui.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.vgui_VocGui.Location = new System.Drawing.Point(0, 61);
+            this.vgui_VocGui.Name = "vgui_VocGui";
+            this.vgui_VocGui.Size = new System.Drawing.Size(700, 393);
+            this.vgui_VocGui.TabIndex = 1;
             // 
-            // vT_Form
+            // mfrm_VocTrainerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 366);
-            this.Controls.Add(this.MainMenu_uc1);
-            this.Controls.Add(this.vocableGui1);
+            this.ClientSize = new System.Drawing.Size(700, 454);
+            
+            this.Controls.Add(this.mmuc_StartUC);
+            this.Controls.Add(this.vgui_VocGui);
             this.MaximizeBox = false;
-            this.Name = "vT_Form";
+            this.Name = "mfrm_VocTrainerForm";
             this.Sizable = false;
             this.Text = "Vokabeltrainer";
             this.ResumeLayout(false);
@@ -67,8 +70,8 @@
 
         #endregion
 
-        private MainMenu_uc MainMenu_uc1;
-        private VocableGui vocableGui1;
+        private MainMenu_uc mmuc_StartUC;
+        private VocableGui vgui_VocGui;
     }
 }
 

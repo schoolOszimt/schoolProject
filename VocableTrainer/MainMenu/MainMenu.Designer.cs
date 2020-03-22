@@ -29,93 +29,103 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu_uc));
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.exit_btn = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.options_btn = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.start_btn = new MaterialSkin.Controls.MaterialRaisedButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.pbo_VHSLogo = new System.Windows.Forms.PictureBox();
+            this.btn_Beenden = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btn_Info = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btn_Start = new MaterialSkin.Controls.MaterialRaisedButton();
+            ((System.ComponentModel.ISupportInitialize)(this.pbo_VHSLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox3
+            // pbo_VHSLogo
             // 
-            this.pictureBox3.ErrorImage = null;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(29, 33);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(89, 41);
-            this.pictureBox3.TabIndex = 17;
-            this.pictureBox3.TabStop = false;
+            this.pbo_VHSLogo.ErrorImage = null;
+            this.pbo_VHSLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbo_VHSLogo.Image")));
+            this.pbo_VHSLogo.Location = new System.Drawing.Point(78, 58);
+            this.pbo_VHSLogo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pbo_VHSLogo.Name = "pbo_VHSLogo";
+            this.pbo_VHSLogo.Size = new System.Drawing.Size(92, 40);
+            this.pbo_VHSLogo.TabIndex = 17;
+            this.pbo_VHSLogo.TabStop = false;
             // 
-            // exit_btn
+            // btn_Beenden
             // 
-            this.exit_btn.BackColor = System.Drawing.Color.Gray;
-            this.exit_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exit_btn.Depth = 0;
-            this.exit_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exit_btn.ForeColor = System.Drawing.SystemColors.Control;
-            this.exit_btn.Location = new System.Drawing.Point(181, 199);
-            this.exit_btn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.exit_btn.Name = "exit_btn";
-            this.exit_btn.Primary = true;
-            this.exit_btn.Size = new System.Drawing.Size(190, 33);
-            this.exit_btn.TabIndex = 14;
-            this.exit_btn.Text = "Exit";
-            this.exit_btn.UseVisualStyleBackColor = false;
-            this.exit_btn.Click += new System.EventHandler(this.exit_btn_Click);
+            this.btn_Beenden.BackColor = System.Drawing.Color.Gray;
+            this.btn_Beenden.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Beenden.Depth = 0;
+            this.btn_Beenden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Beenden.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Beenden.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_Beenden.Location = new System.Drawing.Point(232, 261);
+            this.btn_Beenden.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btn_Beenden.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btn_Beenden.Name = "btn_Beenden";
+            this.btn_Beenden.Primary = true;
+            this.btn_Beenden.Size = new System.Drawing.Size(223, 54);
+            this.btn_Beenden.TabIndex = 3;
+            this.btn_Beenden.Text = "BEENDEN";
+            this.btn_Beenden.UseVisualStyleBackColor = false;
+            this.btn_Beenden.Click += new System.EventHandler(this.exit_btn_Click);
             // 
-            // options_btn
+            // btn_Info
             // 
-            this.options_btn.BackColor = System.Drawing.Color.Gray;
-            this.options_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.options_btn.Depth = 0;
-            this.options_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.options_btn.Location = new System.Drawing.Point(181, 149);
-            this.options_btn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.options_btn.Name = "options_btn";
-            this.options_btn.Primary = true;
-            this.options_btn.Size = new System.Drawing.Size(190, 33);
-            this.options_btn.TabIndex = 13;
-            this.options_btn.Text = "About";
-            this.options_btn.UseVisualStyleBackColor = false;
-            this.options_btn.Click += new System.EventHandler(this.options_btn_Click);
+            this.btn_Info.BackColor = System.Drawing.Color.Gray;
+            this.btn_Info.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Info.Depth = 0;
+            this.btn_Info.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Info.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Info.Location = new System.Drawing.Point(232, 197);
+            this.btn_Info.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btn_Info.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btn_Info.Name = "btn_Info";
+            this.btn_Info.Primary = true;
+            this.btn_Info.Size = new System.Drawing.Size(223, 52);
+            this.btn_Info.TabIndex = 2;
+            this.btn_Info.Text = "INFO";
+            this.btn_Info.UseVisualStyleBackColor = false;
+            this.btn_Info.Click += new System.EventHandler(this.options_btn_Click);
             // 
-            // start_btn
+            // btn_Start
             // 
-            this.start_btn.BackColor = System.Drawing.Color.White;
-            this.start_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.start_btn.Depth = 0;
-            this.start_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.start_btn.Location = new System.Drawing.Point(181, 100);
-            this.start_btn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.start_btn.Name = "start_btn";
-            this.start_btn.Primary = true;
-            this.start_btn.Size = new System.Drawing.Size(190, 33);
-            this.start_btn.TabIndex = 12;
-            this.start_btn.Text = "Start";
-            this.start_btn.UseVisualStyleBackColor = false;
-            this.start_btn.Click += new System.EventHandler(this.start_btn_Click);
+            this.btn_Start.BackColor = System.Drawing.Color.White;
+            this.btn_Start.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Start.Depth = 0;
+            this.btn_Start.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Start.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_Start.Location = new System.Drawing.Point(232, 135);
+            this.btn_Start.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btn_Start.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btn_Start.Name = "btn_Start";
+            this.btn_Start.Primary = true;
+            this.btn_Start.Size = new System.Drawing.Size(223, 50);
+            this.btn_Start.TabIndex = 1;
+            this.btn_Start.Text = "Start";
+            this.btn_Start.UseVisualStyleBackColor = false;
+            this.btn_Start.Click += new System.EventHandler(this.start_btn_Click);
             // 
             // MainMenu_uc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.exit_btn);
-            this.Controls.Add(this.options_btn);
-            this.Controls.Add(this.start_btn);
+            this.Controls.Add(this.pbo_VHSLogo);
+            this.Controls.Add(this.btn_Beenden);
+            this.Controls.Add(this.btn_Info);
+            this.Controls.Add(this.btn_Start);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "MainMenu_uc";
-            this.Size = new System.Drawing.Size(571, 305);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.Size = new System.Drawing.Size(700, 400);
+            ((System.ComponentModel.ISupportInitialize)(this.pbo_VHSLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private MaterialSkin.Controls.MaterialRaisedButton exit_btn;
-        private MaterialSkin.Controls.MaterialRaisedButton options_btn;
-        public MaterialSkin.Controls.MaterialRaisedButton start_btn;
+        private System.Windows.Forms.PictureBox pbo_VHSLogo;
+        private MaterialSkin.Controls.MaterialRaisedButton btn_Beenden;
+        private MaterialSkin.Controls.MaterialRaisedButton btn_Info;
+        public MaterialSkin.Controls.MaterialRaisedButton btn_Start;
     }
 }

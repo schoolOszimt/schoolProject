@@ -40,6 +40,7 @@
       <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -62,6 +63,7 @@
     </Compile>
     <Compile Include="GUIGame.cs" />
     <Compile Include="GUIHandler.cs" />
+    <Compile Include="Testklasse.cs" />
     <Compile Include="VocableGui\VocableGui.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -98,6 +100,7 @@
     </Compile>
     <EmbeddedResource Include="MainMenu\MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />

@@ -44,7 +44,7 @@ namespace VocableTrainer
             }
         }
 
-        private static bool CheckOnDouble(string answer)
+        public static bool CheckOnDouble(string answer)
         {
             return guigame.Answer1 == answer || guigame.Answer2 == answer || guigame.Answer3 == answer || guigame.Answer4 == answer;
         }

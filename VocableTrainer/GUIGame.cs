@@ -29,20 +29,11 @@ namespace VocableTrainer
         public string Answer4 { get; set; }
         public string Question { get; set; }
         public string Solution { get; set; }
-        public static bool IsAnswerCorrect(string answer, bool isAnswerCorrectWithoutPoints)
+        public static bool IsAnswerCorrect(string answer)
         {
-            if (isAnswerCorrectWithoutPoints)
-            {
-                return answer == instance.Solution;
-            }
-            else
-            {
-                points.WasAnswerRight(answer == instance.Solution);
-                return answer == instance.Solution;
-            }
-            
+            return answer == instance.Solution;
         }
-        public static void Next()
+        public static void Next()//umbenennen!
         {
             instance.NewRandom();
         }

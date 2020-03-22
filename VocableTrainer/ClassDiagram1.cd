@@ -1,63 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="VocableTrainer.GUIGame">
-    <Position X="2.75" Y="0.5" Width="1.5" />
+    <Position X="1.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>wikAABiAAAAAAAAAAAAAAAAABABAAAAEAAAAAAAAACA=</HashCode>
       <FileName>GUIGame.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="VocableTrainer.GUIHandler" Collapsed="true">
-    <Position X="6" Y="0.5" Width="1.5" />
+  <Class Name="VocableTrainer.GUIHandler">
+    <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABABIAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABABAAAAAAAAAAAAAACA=</HashCode>
       <FileName>GUIHandler.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="VocableTrainer.vT_Form">
+  <Class Name="VocableTrainer.mfrm_VocTrainerForm">
     <Position X="11.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAIQAECAAAIAAAACAAAACAAAAAAQBACABAAQBAAA=</HashCode>
+      <HashCode>AAAAAMQAACAAAIAAAACAAAACCAAAAAQAACABAAQBAAA=</HashCode>
       <FileName>MainForm\vT_Form.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="VocableTrainer.MainMenu_uc" Collapsed="true">
     <Position X="7.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>MAAAABAAACAAAAAAAACAACECAAAAACAAACCACAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAACAAAAAAAACAACGCgAAAAKAAACCAAQAAAAA=</HashCode>
       <FileName>MainMenu\MainMenu.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="VocableTrainer.Points">
-    <Position X="6.25" Y="6.25" Width="1.5" />
+    <Position X="1.5" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAQAAAAAABAAAAAAAAAAABABAAAAAAACAAAAAAAA=</HashCode>
       <FileName>Points.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="VocableTrainer.Program">
-    <Position X="4.5" Y="0.5" Width="1.5" />
+    <Position X="3.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="VocableTrainer.QuestionGenerator">
-    <Position X="4.5" Y="1.75" Width="1.5" />
+    <Position X="3.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAACAAIAAAEAAgAAAAAAAAAQAAAAAEAAQEAAAAAAA=</HashCode>
       <FileName>QuestionGenerator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="VocableTrainer.Vocable">
-    <Position X="4.5" Y="4.75" Width="1.5" />
+    <Position X="3.25" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAACAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>VocableGui\Vocable.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="VocableTrainer.VocableFunctions">
-    <Position X="6.25" Y="1.5" Width="2" />
+    <Position X="6" Y="5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAACAAAIAAAAAQAAAAAAAAAAAAAAIAQAAAAAUAA=</HashCode>
       <FileName>VocableGui\VocableController.cs</FileName>
@@ -66,12 +66,12 @@
   <Class Name="VocableTrainer.VocableGui">
     <Position X="9.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EFQAAAAACKIICgIAAACAAAQmAAAAAKBAAKCAAAQBABY=</HashCode>
+      <HashCode>ACQAAAAICKIKAAIAAADBBAAiAARAACDAAKAAAAQBABQ=</HashCode>
       <FileName>VocableGui\VocableGui.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="VocableTrainer.XMLReader">
-    <Position X="6.25" Y="4.25" Width="1.5" />
+    <Position X="8.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAEAAAAAAAAAAACCAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>VocableGui\XMLReader.cs</FileName>
