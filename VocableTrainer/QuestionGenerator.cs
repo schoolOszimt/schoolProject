@@ -8,7 +8,7 @@ namespace VocableTrainer
     {
         private static Random random = new Random();
         public static List<Vocable> vocableList;
-        private static GUIGame gui = GUIGame.GetInstance(); 
+        private static GUIGame guigame = GUIGame.GetInstance(); 
         public QuestionGenerator()
         {
             GenerateQuestion();
@@ -29,23 +29,24 @@ namespace VocableTrainer
             vocableList = XMLReader.GetAllVocable();
             if (vocableList.Count < 4)
             {
-                MessageBox.Show("Es ist ein Fehler in Ihrer Vokabelliste aufgetreten. Bitte konsultieren Sie Ihren Systemverwalter.",
+                MessageBox.Show("Es ist ein Fehler in Ihrer Vokabelliste aufgetreten. Bitte konsultieren Sie Ihren Systemverwalter."
+                     + Environment.NewLine + "Lösungshinweis: Die Liste enthält zu wenige Vokabeln.(min. 4)",
                     "Fehler in der XML-Datei", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 System.Environment.Exit(1);
             }
             else
             {
-                gui.Answer1 = MakeAnswer();
-                gui.Answer2 = MakeAnswer();
-                gui.Answer3 = MakeAnswer();
-                gui.Answer4 = MakeAnswer();
+                guigame.Answer1 = MakeAnswer();
+                guigame.Answer2 = MakeAnswer();
+                guigame.Answer3 = MakeAnswer();
+                guigame.Answer4 = MakeAnswer();
                 MakeSolutionAndVocableRandom();
             }
         }
 
         private static bool CheckOnDouble(string answer)
         {
-            return gui.Answer1 == answer || gui.Answer2 == answer || gui.Answer3 == answer || gui.Answer4 == answer;
+            return guigame.Answer1 == answer || guigame.Answer2 == answer || guigame.Answer3 == answer || guigame.Answer4 == answer;
         }
         private static void MakeSolutionAndVocableRandom()
         {
@@ -53,16 +54,16 @@ namespace VocableTrainer
             switch (i)
             {
                 case 1:
-                    SetSolutionAndVocable(gui.Answer1);
+                    SetSolutionAndVocable(guigame.Answer1);
                     return;
                 case 2:
-                    SetSolutionAndVocable(gui.Answer2);
+                    SetSolutionAndVocable(guigame.Answer2);
                     return;
                 case 3:
-                    SetSolutionAndVocable(gui.Answer3);
+                    SetSolutionAndVocable(guigame.Answer3);
                     return;
                 case 4:
-                    SetSolutionAndVocable(gui.Answer4);
+                    SetSolutionAndVocable(guigame.Answer4);
                     return;
             }
         }
@@ -72,8 +73,8 @@ namespace VocableTrainer
             {
                 if(voc.Translation == answer)
                 {
-                    gui.Question = voc.VocableValue;
-                    gui.Solution = voc.Translation;
+                    guigame.Question = voc.VocableValue;
+                    guigame.Solution = voc.Translation;
                 }
             }
         }

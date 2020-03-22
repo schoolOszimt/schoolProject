@@ -31,6 +31,7 @@ namespace VocableTrainer
 
         private void options_btn_Click(object sender, EventArgs e)
         {
+            //überarbeiten
             MessageBox.Show("Creator: Falco Sowa, Tobias Trockenbrodt, Korina Schneider, Domenik Bernhardt", "About",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }

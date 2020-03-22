@@ -28,10 +28,10 @@
       <FileName>MainMenu\MainMenu.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="VocableTrainer.Points" Collapsed="true">
-    <Position X="9.5" Y="0.5" Width="1.5" />
+  <Class Name="VocableTrainer.Points">
+    <Position X="6.25" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAQAAAAAABAAAAAAAAAAABABAAAAAAAAAAAAAgAA=</HashCode>
+      <HashCode>AAAAAQAAAAAABAAAAAAAAAAABABAAAAAAACAAAAAAAA=</HashCode>
       <FileName>Points.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -45,7 +45,7 @@
   <Class Name="VocableTrainer.QuestionGenerator">
     <Position X="4.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAACBAAAAAEAAgAAAAAAAAAQAAAAAEAAQEAAAAAAA=</HashCode>
+      <HashCode>AAAAACAAIAAAEAAgAAAAAAAAAQAAAAAEAAQEAAAAAAA=</HashCode>
       <FileName>QuestionGenerator.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -57,34 +57,34 @@
     </TypeIdentifier>
   </Class>
   <Class Name="VocableTrainer.VocableFunctions">
-    <Position X="6" Y="2.5" Width="1.5" />
+    <Position X="6.25" Y="1.5" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAIAAAAAQAAAAAAAABAAAAAIAQAAAAAUAA=</HashCode>
+      <HashCode>AAAAAAACAAAIAAAAAQAAAAAAAAAAAAAAIAQAAAAAUAA=</HashCode>
       <FileName>VocableGui\VocableController.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="VocableTrainer.VocableGui">
-    <Position X="9.5" Y="3.5" Width="1.5" />
+    <Position X="9.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EFQAAAAACKIICgIAAACAAAQmAAAAAKBAAKCAAAQBABY=</HashCode>
       <FileName>VocableGui\VocableGui.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="VocableTrainer.XMLReader">
-    <Position X="7.75" Y="3.5" Width="1.5" />
+    <Position X="6.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAEAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAEAAAAAAAAAAACCAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>VocableGui\XMLReader.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="VocableTrainer.Properties.Resources">
-    <Position X="7.75" Y="1.5" Width="1.5" />
+    <Position X="8.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="VocableTrainer.Properties.Settings" Collapsed="true">
-    <Position X="9.5" Y="1.5" Width="1.5" />
+    <Position X="9.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
     </TypeIdentifier>

@@ -8,7 +8,7 @@ namespace VocableTrainer
 {
     public class Points
     {
-        public int right { get; protected set; } = 0;
+        public int Right { get; protected set; } = 0;
         private static Points instance;
         private Points() { }
         public static Points GetInstance()
@@ -21,12 +21,12 @@ namespace VocableTrainer
         }
         public void WasAnswerRight(bool answer)
         {
-            if (answer) instance.right += 1;
+            if (answer) instance.Right += 1;
         }
 
         public void Reset()
         {
-            instance.right = 0;
+            instance.Right = 0;
         }
     }
 }

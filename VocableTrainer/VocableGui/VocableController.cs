@@ -8,7 +8,7 @@ namespace VocableTrainer
 {
     class VocableFunctions
     {
-        public Points instance = Points.GetInstance();
+        public Points pointsInstance = Points.GetInstance();
 
         public void Exit(vT_Form form)
         {
@@ -64,7 +64,7 @@ namespace VocableTrainer
                             {
                                 if (GUIGame.IsAnswerCorrect(((MaterialLabel)c).Text, true))
                                 {
-                                    if (((MaterialLabel)c).Name == label.Name) instance.WasAnswerRight(true);
+                                    if (((MaterialLabel)c).Name == label.Name) pointsInstance.WasAnswerRight(true);
                                     ((MaterialLabel)c).ForeColor = Color.Green;
                                     
                                 }
@@ -88,11 +88,11 @@ namespace VocableTrainer
             if (form.numberOfVocable > 0)
             {
                 double percent = 0;
-                if (instance.right > 0)
+                if (pointsInstance.Right > 0)
                 {
-                    percent = Math.Round((Convert.ToDouble(instance.right) / form.numberOfVocable) * 100, 0);
+                    percent = Math.Round((Convert.ToDouble(pointsInstance.Right) / form.numberOfVocable) * 100, 0);
                 }
-                MessageBox.Show("Du hast " + instance.right + " von " + form.numberOfVocable + " Vokabeln richtig beantwortet."
+                MessageBox.Show("Du hast " + pointsInstance.Right + " von " + form.numberOfVocable + " Vokabeln richtig beantwortet."
                                 + Environment.NewLine + "Das sind " + percent + "%.",
                           "Ergebnis", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -102,7 +102,7 @@ namespace VocableTrainer
         public void CodeAfterAnswerButtonPress(vT_Form form)
         {
             form.SetLabelColor();
-            form.SetPointLabel(instance.right);
+            form.SetPointLabel(pointsInstance.Right);
             GUIGame.Next();
             form.SetAnswersAndVocable();
         }

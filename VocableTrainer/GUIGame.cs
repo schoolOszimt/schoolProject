@@ -29,9 +29,9 @@ namespace VocableTrainer
         public string Answer4 { get; set; }
         public string Question { get; set; }
         public string Solution { get; set; }
-        public static bool IsAnswerCorrect(string answer, bool IsAnswerCorrectWithoutPoints)
+        public static bool IsAnswerCorrect(string answer, bool isAnswerCorrectWithoutPoints)
         {
-            if (IsAnswerCorrectWithoutPoints)
+            if (isAnswerCorrectWithoutPoints)
             {
                 return answer == instance.Solution;
             }
