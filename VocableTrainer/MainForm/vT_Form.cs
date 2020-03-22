@@ -68,7 +68,5 @@ namespace VocableTrainer
         {
             numberOfVocable = -1;
         }
-
-
     }
 }

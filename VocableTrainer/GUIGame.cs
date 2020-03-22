@@ -33,7 +33,7 @@ namespace VocableTrainer
         {
             return answer == instance.Solution;
         }
-        public static void Next()//umbenennen!
+        public static void Next()
         {
             instance.NewRandom();
         }
