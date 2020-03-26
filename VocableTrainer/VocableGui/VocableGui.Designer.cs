@@ -35,13 +35,13 @@
             this.btn_Skip = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btn_Help = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.lbl_answer2 = new MaterialSkin.Controls.MaterialLabel();
-            this.lbl_answer3 = new MaterialSkin.Controls.MaterialLabel();
-            this.lbl_answer4 = new MaterialSkin.Controls.MaterialLabel();
             this.points_label = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.lbl_answer1 = new MaterialSkin.Controls.MaterialLabel();
             this.pnl_Antworten = new System.Windows.Forms.Panel();
+            this.lbl_answer2 = new System.Windows.Forms.Label();
+            this.lbl_answer4 = new System.Windows.Forms.Label();
+            this.lbl_answer3 = new System.Windows.Forms.Label();
+            this.lbl_answer1 = new System.Windows.Forms.Label();
             this.pnl_Background = new System.Windows.Forms.Panel();
             this.pnl_Punkte = new System.Windows.Forms.Panel();
             this.pnl_Optionen = new System.Windows.Forms.Panel();
@@ -55,7 +55,7 @@
             // 
             this.vocable_label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.vocable_label.BackColor = System.Drawing.Color.Transparent;
-            this.vocable_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vocable_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.vocable_label.ForeColor = System.Drawing.Color.White;
             this.vocable_label.Location = new System.Drawing.Point(2, 41);
             this.vocable_label.Name = "vocable_label";
@@ -122,54 +122,6 @@
             this.materialLabel2.Size = new System.Drawing.Size(0, 19);
             this.materialLabel2.TabIndex = 42;
             // 
-            // lbl_answer2
-            // 
-            this.lbl_answer2.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_answer2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbl_answer2.Depth = 0;
-            this.lbl_answer2.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lbl_answer2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbl_answer2.Location = new System.Drawing.Point(0, 40);
-            this.lbl_answer2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lbl_answer2.Name = "lbl_answer2";
-            this.lbl_answer2.Size = new System.Drawing.Size(354, 30);
-            this.lbl_answer2.TabIndex = 3;
-            this.lbl_answer2.Text = "answer2";
-            this.lbl_answer2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl_answer2.Click += new System.EventHandler(this.answer2_label_Click);
-            // 
-            // lbl_answer3
-            // 
-            this.lbl_answer3.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_answer3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbl_answer3.Depth = 0;
-            this.lbl_answer3.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lbl_answer3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbl_answer3.Location = new System.Drawing.Point(0, 82);
-            this.lbl_answer3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lbl_answer3.Name = "lbl_answer3";
-            this.lbl_answer3.Size = new System.Drawing.Size(354, 30);
-            this.lbl_answer3.TabIndex = 4;
-            this.lbl_answer3.Text = "answer3";
-            this.lbl_answer3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl_answer3.Click += new System.EventHandler(this.answer3_label_Click);
-            // 
-            // lbl_answer4
-            // 
-            this.lbl_answer4.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_answer4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbl_answer4.Depth = 0;
-            this.lbl_answer4.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lbl_answer4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbl_answer4.Location = new System.Drawing.Point(0, 124);
-            this.lbl_answer4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lbl_answer4.Name = "lbl_answer4";
-            this.lbl_answer4.Size = new System.Drawing.Size(354, 30);
-            this.lbl_answer4.TabIndex = 5;
-            this.lbl_answer4.Text = "answer4";
-            this.lbl_answer4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl_answer4.Click += new System.EventHandler(this.answer4_label_Click);
-            // 
             // points_label
             // 
             this.points_label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -190,33 +142,65 @@
             // 
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
-            // lbl_answer1
-            // 
-            this.lbl_answer1.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_answer1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbl_answer1.Depth = 0;
-            this.lbl_answer1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lbl_answer1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbl_answer1.Location = new System.Drawing.Point(0, 0);
-            this.lbl_answer1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lbl_answer1.Name = "lbl_answer1";
-            this.lbl_answer1.Size = new System.Drawing.Size(354, 30);
-            this.lbl_answer1.TabIndex = 2;
-            this.lbl_answer1.Text = "answer1";
-            this.lbl_answer1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl_answer1.Click += new System.EventHandler(this.answer1_label_Click);
-            // 
             // pnl_Antworten
             // 
             this.pnl_Antworten.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_Antworten.Controls.Add(this.lbl_answer1);
             this.pnl_Antworten.Controls.Add(this.lbl_answer2);
             this.pnl_Antworten.Controls.Add(this.lbl_answer4);
             this.pnl_Antworten.Controls.Add(this.lbl_answer3);
+            this.pnl_Antworten.Controls.Add(this.lbl_answer1);
             this.pnl_Antworten.Location = new System.Drawing.Point(69, 97);
             this.pnl_Antworten.Name = "pnl_Antworten";
             this.pnl_Antworten.Size = new System.Drawing.Size(354, 161);
             this.pnl_Antworten.TabIndex = 5;
+            // 
+            // lbl_answer2
+            // 
+            this.lbl_answer2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_answer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.lbl_answer2.Location = new System.Drawing.Point(7, 40);
+            this.lbl_answer2.Name = "lbl_answer2";
+            this.lbl_answer2.Size = new System.Drawing.Size(338, 32);
+            this.lbl_answer2.TabIndex = 56;
+            this.lbl_answer2.Text = "answer2";
+            this.lbl_answer2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_answer2.Click += new System.EventHandler(this.answer_label_Click);
+            // 
+            // lbl_answer4
+            // 
+            this.lbl_answer4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_answer4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.lbl_answer4.Location = new System.Drawing.Point(7, 121);
+            this.lbl_answer4.Name = "lbl_answer4";
+            this.lbl_answer4.Size = new System.Drawing.Size(338, 32);
+            this.lbl_answer4.TabIndex = 55;
+            this.lbl_answer4.Text = "answer4";
+            this.lbl_answer4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_answer4.Click += new System.EventHandler(this.answer_label_Click);
+            // 
+            // lbl_answer3
+            // 
+            this.lbl_answer3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_answer3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.lbl_answer3.Location = new System.Drawing.Point(7, 80);
+            this.lbl_answer3.Name = "lbl_answer3";
+            this.lbl_answer3.Size = new System.Drawing.Size(338, 32);
+            this.lbl_answer3.TabIndex = 54;
+            this.lbl_answer3.Text = "answer3";
+            this.lbl_answer3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_answer3.Click += new System.EventHandler(this.answer_label_Click);
+            // 
+            // lbl_answer1
+            // 
+            this.lbl_answer1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_answer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.lbl_answer1.Location = new System.Drawing.Point(7, 0);
+            this.lbl_answer1.Name = "lbl_answer1";
+            this.lbl_answer1.Size = new System.Drawing.Size(338, 32);
+            this.lbl_answer1.TabIndex = 53;
+            this.lbl_answer1.Text = "answer1";
+            this.lbl_answer1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_answer1.Click += new System.EventHandler(this.answer_label_Click);
             // 
             // pnl_Background
             // 
@@ -277,15 +261,15 @@
         private MaterialSkin.Controls.MaterialRaisedButton btn_Skip;
         private MaterialSkin.Controls.MaterialRaisedButton btn_Help;
         public MaterialSkin.Controls.MaterialLabel materialLabel2;
-        public MaterialSkin.Controls.MaterialLabel lbl_answer2;
-        public MaterialSkin.Controls.MaterialLabel lbl_answer3;
-        public MaterialSkin.Controls.MaterialLabel lbl_answer4;
         public System.Windows.Forms.Label points_label;
         public System.Windows.Forms.Timer timer;
-        public MaterialSkin.Controls.MaterialLabel lbl_answer1;
         private System.Windows.Forms.Panel pnl_Antworten;
         private System.Windows.Forms.Panel pnl_Background;
         private System.Windows.Forms.Panel pnl_Punkte;
         private System.Windows.Forms.Panel pnl_Optionen;
+        public System.Windows.Forms.Label lbl_answer2;
+        public System.Windows.Forms.Label lbl_answer4;
+        public System.Windows.Forms.Label lbl_answer3;
+        public System.Windows.Forms.Label lbl_answer1;
     }
 }

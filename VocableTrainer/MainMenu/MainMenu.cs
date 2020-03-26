@@ -32,8 +32,13 @@ namespace VocableTrainer
         private void options_btn_Click(object sender, EventArgs e)
         {
             //überarbeiten
-            MessageBox.Show("Für Fragen zum Programm wenden Sie sich bitte an Ihren Dozenten." + Environment.NewLine +Environment.NewLine + "Dieser Vokabeltrainer wurde im Auftrag der VHS Berlin erstellt." + Environment.NewLine + "(c)2020 Falco Sowa, Tobias Trockenbrodt, Korina Schneider, Domenik Bernhardt", "Programminformationen",
+            MessageBox.Show("Für Fragen zum Programm wenden Sie sich bitte an Ihren Dozenten." + Environment.NewLine +Environment.NewLine + "Dieser Vokabeltrainer wurde im Auftrag der VHS Berlin erstellt." + Environment.NewLine + "© 2020 Falco Sowa, Tobias Trockenbrodt, Korina Schneider, Domenik Bernhardt", "Programminformationen",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void pbo_VHSLogo_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://berlin.de/vhs/");
         }
     }
 }

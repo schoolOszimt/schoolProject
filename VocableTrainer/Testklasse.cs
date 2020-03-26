@@ -39,7 +39,7 @@ namespace VocableTrainer
             //Act
             for (int i = 0; i < 5; i++)
             {
-                punkte.WasAnswerRight(true);
+                punkte.AnswerIsRight();
             }
             //Assert
             Assert.AreEqual(5, punkte.Right);
@@ -53,7 +53,7 @@ namespace VocableTrainer
             //Act
             for (int i = 0; i < 5; i++)
             {
-                punkte.WasAnswerRight(true);
+                punkte.AnswerIsRight();
             }
             punkte.Reset();
             //Assert

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace VocableTrainer
+﻿namespace VocableTrainer
 {
     public class Points
     {
@@ -19,9 +13,9 @@ namespace VocableTrainer
             }
             return instance;
         }
-        public void WasAnswerRight(bool answer)
+        public void AnswerIsRight()
         {
-            if (answer) instance.Right += 1;
+            instance.Right += 1;
         }
 
         public void Reset()

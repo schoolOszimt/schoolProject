@@ -23,30 +23,17 @@ namespace VocableTrainer
 
         private void btn_Back_Click(object sender, EventArgs e)
         {
+            
             vocableFunctions.Exit(VTForm);
         }
 
-        private void answer1_label_Click(object sender, EventArgs e)
+        private void answer_label_Click(object sender, EventArgs e)
         {
-            vocableFunctions.AnswerClick(VTForm, lbl_answer1, this);
+            if (sender is Label label && !string.IsNullOrEmpty(label.Text))
+            {
+                vocableFunctions.AnswerClick(label, this);
+            }
         }
-
-        private void answer2_label_Click(object sender, EventArgs e)
-        {
-            vocableFunctions.AnswerClick(VTForm, lbl_answer2, this);
-        }
-
-        private void answer3_label_Click(object sender, EventArgs e)
-        {
-           vocableFunctions.AnswerClick(VTForm, lbl_answer3, this);
-        }
-
-        private void answer4_label_Click(object sender, EventArgs e)
-        {
-            vocableFunctions.AnswerClick(VTForm, (MaterialSkin.Controls.MaterialLabel)sender, this);
-        }
-
-
 
         private void btn_Skip_Click(object sender, EventArgs e)
         {

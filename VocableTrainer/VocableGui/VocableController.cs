@@ -1,8 +1,8 @@
 ﻿using System;
-using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 using MaterialSkin.Controls;
+using System.Linq;
 
 namespace VocableTrainer
 {
@@ -19,23 +19,21 @@ namespace VocableTrainer
 
         public void Help(object newDesign)
         {
-            int numberOfDeletedTexts = 0;
-
-            for (int i = 0; i < ((Button)newDesign).Parent.Parent.Controls.Count; i++)
+            var numberOfDeletedTexts = 0;
+            var controls = ((Button) newDesign).Parent.Parent.Controls;
+            for (var i = 0; i < controls.Count; i++)
             {
-                if ((((Button)newDesign).Parent.Parent.Controls[i] is Panel panel))
+                if (controls[i] is Panel panel)
                 {
                     foreach (Control c in panel.Controls)
                     {
-                        if (c is MaterialLabel)
+                        if (!(c is Label label)) continue;
+                        if (label.Name.Contains("answer") &&
+                            !GUIGame.IsAnswerCorrect(label.Text) &&
+                            numberOfDeletedTexts < 2)
                         {
-                            if (((MaterialLabel)c).Name.Contains("answer") && !GUIGame.IsAnswerCorrect(((MaterialLabel)c).Text)
-                                && numberOfDeletedTexts < 2)
-                            {
-                                c.Text = "";
-                                numberOfDeletedTexts++;
-                            }
-                            
+                            label.Text = "";
+                            numberOfDeletedTexts++;
                         }
                     }
                 }
@@ -48,40 +46,44 @@ namespace VocableTrainer
             form.SetAnswersAndVocable();
         }
 
-        public void AnswerClick(mfrm_VocTrainerForm form, MaterialLabel label, VocableGui gui)
+        public void AnswerClick(Label label, VocableGui gui)
         {
-            for (int i = 0; i < label.Parent.Parent.Controls.Count; i++)
+            var controls = label?.Parent?.Parent?.Controls;
+            if (controls == null) throw new ArgumentException(nameof(label));
+
+            var answerLabels = controls
+                .Cast<Control>()
+                .Where(e => e is Panel panel && panel.Name.Equals("pnl_Antworten"))
+                .Cast<Panel>()
+                .SelectMany(e => e.Controls.Cast<Control>())
+                .Where(e => e is Label answerLabel && answerLabel.Name.Contains("answer"))
+                .ToList();
+
+            var correctLabels = answerLabels
+                .Where(e => GUIGame.IsAnswerCorrect(e.Text))
+                .ToList();
+
+            if (correctLabels.Count != 1) throw new Exception("Only one answer can be correct");
+
+            if (correctLabels.Any(e => e == label))
             {
-                if (label.Parent.Parent.Controls[i] is Panel panel && ((Panel)label.Parent.Parent.Controls[i]).Name.Equals("pnl_Antworten"))
-                {
-                    foreach (Control c in panel.Controls)
-                    {
-                        if (c is MaterialLabel)
-                        {
-                            if (((MaterialLabel)c).Name.Contains("answer"))
-                            {
-                                if (GUIGame.IsAnswerCorrect(((MaterialLabel)c).Text))
-                                {
-                                    if (((MaterialLabel)c).Name == label.Name)
-                                        pointsInstance.WasAnswerRight(true);
-                                        ((MaterialLabel)c).ForeColor = Color.Green;
-                                    
-                                }
-                                else
-                                {
-                                    ((MaterialLabel)c).ForeColor = Color.Red;
-                                }
-                            }
-                        }
-                    }
-                }
-                //Damit der Nutzer die Chance hat die Ausgabe zu lesen, wird an dieser Stelle eine Verzögerung eingefügt
-                gui.timer.Interval = 950;
-                gui.timer.Start();
+                pointsInstance.AnswerIsRight();
             }
 
+            var correctLabel = correctLabels.FirstOrDefault();
+            if (correctLabel != null) correctLabel.ForeColor = Color.Green;
+
+            var incorrectLabels = answerLabels
+                .Where(e => !correctLabels.Contains(e));
+
+            foreach (var answerLabel in incorrectLabels)
+            {
+                answerLabel.ForeColor = Color.Red;
+            }
+            gui.timer.Interval = 950;
+            gui.timer.Start();
         }
-         
+
         public void ShowResultDialog(mfrm_VocTrainerForm form)
         {
             if (form.numberOfVocable > 0)
